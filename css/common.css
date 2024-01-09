@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    scrollbar-width: none;
+    /* =>firefox인식 */
+    -ms-overflow-style: none;
+    /* =>ie,edge 인식 */
+    display: none;
+    /* =>가상 선택자 + display:none
+    =>chrome,safari,opera 인식 */
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}

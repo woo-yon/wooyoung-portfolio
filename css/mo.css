@@ -1,0 +1,375 @@
+@media all and (max-width:768px){
+
+.wrap{
+    display: none;
+}
+:root {
+    --swiper-theme-color: white;
+}
+.swiper-button-next,.swiper-button-prev {
+    color: white;
+}
+
+/* 기본틀 잡기 */
+.mob_wrap{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.mob_page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.m_main{
+    background: url("../mob_img/m_bg.png") no-repeat center/cover;
+    position: relative;
+    z-index: 9;
+}
+/* 기본틀 끝 */
+
+/* 메인 영역 시작 */
+.mob_ticket_prt{
+    width: 96vw;
+    height: 90vh;
+    background: url("../mob_img/m_ticket_prt.png") no-repeat center/cover;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.mob_ticket_button{
+    width: 25%;
+    height: 8.5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12%;
+}
+#mob_but_profile, #mob_but_contact{
+    display: block;
+    width: 100%;
+    height: 50%;
+    background: rgb(136, 101, 173);
+    border-radius: 200px;
+    color: white;
+    font-family: "preconnect";
+    font-size: 12px;
+    text-align: center;
+    line-height: 4vh;
+}
+#mob_but_contact{
+    background: rgb(196, 157, 214);
+    margin-top: 8px;
+}
+.mob_ticket_button button:hover{
+    cursor: pointer;
+}
+.ticket_line{
+    width: 600px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 90%;
+    margin-top: -2px;
+    left: 50%;
+    margin-left: -300px;
+}
+/* 메인 영역 끝 */
+
+
+
+/* 메뉴영역 시작 */
+.mob_menu{
+    width: 100%;
+    height: 9%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+    z-index: 9;
+}
+.mob_menu > div{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+.mob_menu a{
+    display: block;
+    width: 55%;
+    height: 55%;
+    margin: 20% 0% 0% 20%;
+}
+.but_home{
+    background: url("../mob_img/but_home.png") no-repeat center/cover;
+    background-size: contain;
+}
+.but_profile{
+    background: url("../mob_img/but_profile.png") no-repeat center/cover;
+    background-size: contain;
+}
+.but_ticket{
+    background: url("../mob_img/but_ticket.png") no-repeat center/cover;
+    background-size: contain;
+}
+.but_call{
+    background: url("../mob_img/but_call.png") no-repeat center/cover;
+    background-size: contain;
+}
+.but_home:hover{
+    background: url("../mob_img/but_home_h.png") no-repeat center/cover;
+    background-size: contain;
+}
+.but_profile:hover{
+    background: url("../mob_img/but_profile_h.png") no-repeat center/cover;
+    background-size: contain;
+}
+.but_ticket:hover{
+    background: url("../mob_img/but_ticket_h.png") no-repeat center/cover;
+    background-size: contain;
+}
+.but_call:hover{
+    background: url("../mob_img/but_call_h.png") no-repeat center/cover;
+    background-size: contain;
+}
+/* 메뉴영역 끝 */
+
+
+
+/* 프로필 영역 시작*/
+.m_profile{
+    background: url("../mob_img/m_bg2.png") no-repeat center/cover;
+}
+.mob_profile{
+    width: 90vw;
+    height: 80vh;
+    background: url("../mob_img/m_profile_bg.png") no-repeat center/cover;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+    top: 10%;
+}
+
+/* 프로필 텍스트 영역 */
+.bold_txt{
+    font-weight: bold;
+}
+.mob_profile_txt{
+    font-family: 'NanumSquare';
+    font-size: 3.5vw;
+    width: 75%;
+    height: 50%;
+    position: absolute;
+    top: 23%;
+    left: 12%;
+}
+.m_pf_left_txt, .m_pf_right_txt{
+    width: 35%;
+    line-height: 2.2vh;
+}
+.m_pf_right_txt{
+    width: 50%;
+    float: right;
+    margin-top: -6.7vh;
+}
+.m_pf_bot_txt{
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    margin-top: 5vh;
+    font-size: 2.8vw;
+}
+.m_in_bot_txt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.m_in_bot_txt span{
+    display: block;
+}
+.m_bot_txt_left{
+    width: 40%;
+    float: left;
+}
+.m_bot_txt_right{
+    width: 100%;
+}
+.m_license{
+    margin-top: 3vh;
+}
+/* 프로필 텍스트 영역 끝 */
+
+/* 프로필 이미지 구간 */
+.mob_pf_tools{
+    width: 100%;
+    height: 10%;
+    background: url("../mob_img/m_profile_tools.png") no-repeat center/cover;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.5vh;
+}
+/* 프로필 이미지 구간 끝 */
+/* 프로필 영역 끝 */
+
+
+/* 작품영역 시작 */
+/* .m_portfolio{
+    overflow: hidden;
+} */
+
+.swiper {
+    width: 100%;
+}
+.swiper-slide{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m_blushaak{
+    background: url("../mob_img/m_blushaak_bg.png") no-repeat center/cover;
+    background-size: fill;
+}
+.m_heaps{
+    background: url("../mob_img/m_heaps_bg.png") no-repeat center/cover;
+    background-size: fill;
+}
+.m_lush{
+    background: url("../mob_img/m_lush_bg.png") no-repeat center/cover;
+    background-size: fill;
+}
+.mob_in_ticket{
+    width: 68%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 40%;
+    margin-left: 15%;
+}
+.mob_ticket_logo{
+    width: 56%;
+    height: 28%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 36%;
+    margin-left: 22%;
+}
+.blushaak_logo{
+    background: url("../mob_img/m_blushaak_logo.png") no-repeat center/cover;
+    background-size: contain;
+}
+.heaps_logo{
+    background: url("../mob_img/m_heaps_logo.png") no-repeat center/cover;
+    background-size: contain;
+}
+.lush_logo{
+    background: url("../mob_img/m_lush_logo.png") no-repeat center/cover;
+    background-size: contain;
+}
+/* 작품영역 끝 */
+
+
+/* 엔딩크레딧 구간 시작 */
+.m_contact{
+    background: url("../mob_img/m_bg.png") no-repeat center/cover;
+    font-family: 'NanumSquare';
+    color: white;
+}
+.ed_prt{
+    width: 98%;
+    height: 70%;
+    background: url("../mob_img/m_ticket_prt2.png") no-repeat center/cover;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30%;
+}
+.mob_contact{
+    width: 70%;
+    height: 51%;
+    position: absolute;
+    top: 24%;
+    left: 15%;
+    /* background: purple; */
+}
+.mob_the_end{
+    width: 15vw;
+    height: 2vh;
+    background: url("../img/ending/the_end.png") no-repeat center/cover;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+}
+.mob_contact_txt{
+    width: 80%;
+    height: 40%;
+    font-size: 3vw;
+    margin: 0 auto;
+    margin-top: 4vh;
+}
+.mob_in_con_txt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.mob_in_con_txt span{
+    display: block;
+}
+.m_last{
+    margin-top: 5vh;
+}
+.m_con_txt_left{
+    width: 13vw;
+    text-align: right;
+    margin-right: 20px;
+}
+.m_con_txt_right{
+    width: 20vw;
+}
+.mob_contact_bot{
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    margin-top: 7vh;
+}
+.mob_contact_icon{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+}
+/* a태그 안에 img 태그 주기-display:block;-사이즈 주기 */
+.mob_contact_icon img{
+    object-fit: contain;
+}
+.mob_contact_icon a{
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+.mob_copylight{
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    margin-bottom: 7vw;
+    color: black;
+}
+/* 엔딩크레딧 구간 끝 */
+
+
+
+
+
+}
